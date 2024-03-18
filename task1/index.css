@@ -1,37 +1,113 @@
-p {
-    color: rgb(0, 0, 0);
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #f2f2f2; */
+  padding: 10px;
+}
 
-/*
-
-nav ul li a {
+nav a {
   text-decoration: none;
-  color: black;
-} 
-
-*/
-
-nav ul {
-  list-style-type: none; /* 移除列表样式 */
-  padding: 0;
-  margin: 0;
-  overflow: hidden; /* 清除浮动 */
-  /*background-color: #f2f2f2; /* 设置背景颜色 */
+  font: 13px/23px Arial,sans-serif;
+  padding: 5px; 
 }
 
-nav ul li {
-  float: left; /* 设置横向排列 */
+nav a:hover {
+  color: blue;
 }
 
-nav ul li a {
-  display: block;
-  color: #333; /* 设置链接文字颜色 */
-  text-align: center;
-  padding: 14px 16px; /* 设置内边距 */
-  text-decoration: none; /* 移除下划线 */
+.nav-left {
+  display: flex;
 }
 
-nav ul li a:hover {
-  /*background-color: #ddd; /* 设置鼠标悬停时的背景颜色 */
-  color: blue; /* 设置鼠标悬停时的文字颜色 */
+.nav-left a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-right {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.nav-right a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+
+.setting-btn {
+  color: #333;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.login-btn {
+  background-color: #4E6EF2;
+  color: #ffffff;
+  border-radius: 5px;
+  height: 10px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+  align-items: center;
+  padding: 5px;   /*左右间隔*/ 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 98vh;
+}
+
+main {
+  flex: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  height: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #4E6EF2;
+  background: #fff;
+  color: #222;
+  margin: auto;
+  width: 50%;
+}
+
+.search-box input {
+  width: 410px;
+  height: 28px;
+  border: none;
+  outline: none;
+  
+}
+
+.search-box button {
+  width: 80px;
+  height: 40px;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 0 10px 10px 0;
+  background-color: #4E6EF2;
 }
