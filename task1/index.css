@@ -229,13 +229,13 @@ main {
 
 
 [class^="hot-hot-"] {
-  
+
   display: inline-block;
-  transform: scale(0.9); /* 可以根据需要调整缩放比例 */
-  transform-origin: top;
+  transform: scale(0.8); /* 可以根据需要调整缩放比例 */
+  transform-origin: center;
   
   color: #ffffff;
-  background-color: orangered;
+  background-color: #FF6600;
   padding: 0 2px;
   border-radius: 4px;
   font-weight: 200;
