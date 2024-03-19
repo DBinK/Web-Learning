@@ -1,3 +1,9 @@
+body, html {
+  height: 100%; /* 设置body和html的高度为100% */
+  margin: 0; /* 去除默认的margin */
+  padding: 0; /* 去除默认的padding */
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -37,7 +43,6 @@ nav a:hover {
   text-decoration: none;
 }
 
-
 .setting-btn {
   color: #333;
   border-radius: 5px;
@@ -55,59 +60,36 @@ nav a:hover {
   align-items: center;
 }
 
+.login-btn :hover{
+  color: #ffffff
+  background-color: #264ff1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000; /* 为了更好地可视化效果 */
+  margin: 0 auto;
+  width: 50%;
+  height: calc(100vh - 20px);; /* 设置容器的高度为整个视口的高度 */
+}
+
+.logo {
+} 
+
+.search-box {
+}
 
 footer a {
   text-decoration: none;
+  height: 20px;
   color: #333;
   font-size: 12px;
   align-items: center;
   padding: 5px;   /*左右间隔*/ 
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 98vh;
-}
 
-main {
-  flex: 1;
-}
 
-.logo {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  width: 50%;
-}
-
-.search-box {
-  display: flex;
-  align-items: center;
-  height: 15px;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 10px;
-  border: 1px solid #4E6EF2;
-  background: #fff;
-  color: #222;
-  margin: auto;
-  width: 50%;
-}
-
-.search-box input {
-  width: 410px;
-  height: 28px;
-  border: none;
-  outline: none;
-  
-}
-
-.search-box button {
-  width: 80px;
-  height: 40px;
-  color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 0 10px 10px 0;
-  background-color: #4E6EF2;
-}
