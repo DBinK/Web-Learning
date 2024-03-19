@@ -76,20 +76,24 @@ main {
   height: calc(100vh - 80px);; /* 设置容器的高度为整个视口的高度 */
 }
 
-.logo {
+.logo img {
   border: 1px solid #000; /* 为了更好地可视化效果 */
   transform: scale(0.5);
 } 
 
 .search-box {
+  border: 1px solid #000; /* 为了更好地可视化效果 */
+
+}
+
+footer {
+  text-align: center;
 }
 
 footer a {
   text-decoration: none;
-  height: 20px;
   color: #a3a3a3;
   font-size: 12px;
-  align-items: center;
   padding: 5px;   /*左右间隔*/ 
 }
 
