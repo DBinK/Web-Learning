@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 优化移动端显示 -->
     <link href="index.css" rel="stylesheet" />
     <title>百度一下, 你就知道</title> <!-- 定义文档标题 -->
+
 </head>
 
 <body>
@@ -49,7 +50,7 @@
                 </a>
 
 
-                <div class="refresh-ctrl">
+                <div class="refresh-ctrl" onclick="rotateBtn()">
                     <a class="refresh-btn"></a> 
                     <a class="refresh-text">换一换</a>
                 </div>            
@@ -121,5 +122,17 @@
     </footer>
 
 </body>
+
+<script>
+    function rotateBtn() {
+        const btn = document.querySelector('.refresh-btn');
+        btn.classList.add('rotate');
+        
+        // Remove the rotate class after the animation completes
+        btn.addEventListener('transitionend', () => {
+            btn.classList.remove('rotate');
+        }, { once: true });
+    }
+</script>
 
 </html> <!-- 结束HTML文档 -->

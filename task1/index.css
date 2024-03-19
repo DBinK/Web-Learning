@@ -169,6 +169,15 @@ main {
   color: #4e4e4e;
 }
 
+.refresh-btn {
+  display: inline-block;
+  transition: transform 1s;
+}
+
+.rotate {
+  transform: rotate(360deg);
+}
+
 /* *热搜列表 */
 
 .hot-list {
