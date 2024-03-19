@@ -8,6 +8,7 @@ body, html {
   height: 100%; /* 设置body和html的高度为100% */
   margin: 0; /* 去除默认的margin */
   padding: 0; /* 去除默认的padding */
+
 }
 
 nav {
@@ -68,18 +69,20 @@ nav a:hover {
 
 main {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   border: 1px solid #000; /* 为了更好地可视化效果 */
   margin: 0 auto;
-  width: 60%;
+  width: 653px;
   height: calc(100vh - 80px);; /* 设置容器的高度为整个视口的高度 */
 }
 
 .logo img {
+  box-sizing: border-box;
+  display: block;
+  width: 270px;
+  margin-bottom: 15px;
   border: 1px solid #000; /* 为了更好地可视化效果 */
-  transform: scale(0.5);
 } 
 
 .search-box {
@@ -92,20 +95,27 @@ main {
   align-items: center;
   justify-content: space-between; /* 将元素分别对齐到容器的左右两端 */
    /*border: 1px solid #000; /* 为了更好地可视化效果 */
+
 }
 
 .input-box {
-  height: 30px;
-  width: 80%;
-  border-radius: 10px;
+  box-sizing: border-box;
+  margin-right: -20px;
+  height: 40px;
+  padding: 5px;
+  width: 90%;
+  border: 1px solid #4E6EF2; /* 细边框 */
+  border-radius: 10px 0 0 10px;
 }
 
 .search-btn {
-  height: 30px;
+  box-sizing: border-box;
+  height: 40px;
   width: 20%;
   color: #ffffff;
   background-color: #4E6EF2;
-  border-radius: 10px;
+  border: 1px solid #4E6EF2; /* 细边框 */
+  border-radius: 0 10px 10px 0;
 }
 
 
@@ -114,13 +124,19 @@ main {
   align-items: center;
   justify-content: space-between; /* 将元素分别对齐到容器的左右两端 */
   flex-direction: row;
-  border: 1px solid #000; /* 为了更好地可视化效果 */
+  margin-top: 20px;
+  /*border: 1px solid #000; /* 为了更好地可视化效果 */
   font-family: cIconfont;
 }
 
 .hot-btn {
-  border: 1px solid #000; /* 为了更好地可视化效果 */
-  
+  /*border: 1px solid #000; /* 为了更好地可视化效果 */
+  text-decoration: none;
+  color: #000;
+}
+
+.refresh-btn {
+  /*border: 1px solid #000; /* 为了更好地可视化效果 */
 }
 
 .hot-list ul {
@@ -129,9 +145,7 @@ main {
   column-count: 2;
 }
 
-.refresh-btn {
-  border: 1px solid #000; /* 为了更好地可视化效果 */
-}
+
 footer {
   text-align: center;
   font-family: cIconfont;
