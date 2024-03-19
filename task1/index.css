@@ -78,7 +78,7 @@ main {
   align-items: center;
   border: 1px solid #000; /* 为了更好地可视化效果 */
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
   height: calc(100vh - 80px);; /* 设置容器的高度为整个视口的高度 */
 }
 
@@ -88,27 +88,58 @@ main {
 } 
 
 .search-box {
-  border: 1px solid #000; /* 为了更好地可视化效果 */
-
+  /*border: 1px solid #000; /* 为了更好地可视化效果 */
+  width: calc(100% - 20px); 
 }
+
+.input-ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 将元素分别对齐到容器的左右两端 */
+   /*border: 1px solid #000; /* 为了更好地可视化效果 */
+}
+
+.input-box {
+  height: 30px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.search-btn {
+  height: 30px;
+  width: 20%;
+  color: #ffffff;
+  background-color: #4E6EF2;
+  border-radius: 10px;
+}
+
 
 .hot-title {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction:row;
-
+  justify-content: space-between; /* 将元素分别对齐到容器的左右两端 */
+  flex-direction: row;
   border: 1px solid #000; /* 为了更好地可视化效果 */
-
   font-family: cIconfont;
 }
 
 .hot-btn {
+  border: 1px solid #000; /* 为了更好地可视化效果 */
   
 }
 
+.hot-list ul {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+
+.refresh-btn {
+  border: 1px solid #000; /* 为了更好地可视化效果 */
+}
 footer {
   text-align: center;
+  font-family: cIconfont;
 }
 
 footer a {
@@ -118,7 +149,4 @@ footer a {
   padding: 5px;   /*左右间隔*/ 
 }
 
-footer .accessibility,.more {
-  font-family: cIconfont;
-}
 
