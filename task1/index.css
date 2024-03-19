@@ -169,6 +169,8 @@ main {
   color: #4e4e4e;
 }
 
+/* *热搜列表 */
+
 .hot-list {
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   column-count: 2;
@@ -183,9 +185,10 @@ main {
   text-align: center;
 
   box-sizing: border-box;
+  font-family: Arial,sans-serif;
 
   padding: 0px;
-  border: 1px solid #000; /* 为了更好地可视化效果 */
+  /* border: 1px solid #000; /* 为了更好地可视化效果 */ 
   height: 36px;
   
 }
@@ -206,7 +209,7 @@ main {
   text-align: center;
   width: 16px;
   margin-right: 5px;
-  color: #000;
+  color: #9195A3;
   font-family: cIconfont;
 }
 
@@ -240,8 +243,6 @@ main {
   border-radius: 4px;
   font-weight: 200;
 }
-
-
 
 
 /* *底栏部分 */
