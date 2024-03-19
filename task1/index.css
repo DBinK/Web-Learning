@@ -169,7 +169,16 @@ main {
 
 .hot-list li {
   height: 36px;
-  
+}
+
+.hot-list a {
+  color: #000;
+  text-decoration: none;
+}
+
+.hot-list a:hover {
+  text-decoration: underline; /* 添加下划线 */
+  color: #315EFB;
 }
 
 [class^="hot-num-"] {
@@ -182,15 +191,6 @@ main {
 }
 
 
-[class^="hot-title-"] {
-  text-decoration: none !important;
-  color: #000;
-}
-
-[class^="hot-title-"]:hover {
-  text-decoration: underline; /* 添加下划线 */
-  color: #315EFB;
-}
 
 /* 底栏部分 */
 
