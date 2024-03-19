@@ -66,11 +66,6 @@ nav a:hover {
   align-items: center;
 }
 
-.login-btn :hover{
-  color: #ffffff
-  background-color: #264ff1;
-}
-
 main {
   display: flex;
   justify-content: center;
