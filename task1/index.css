@@ -1,3 +1,9 @@
+@font-face {
+  font-family: cIconfont;
+  src: url('https://pss.bdstatic.com/static/superman/font/iconfont-cdfecb8456.eot');
+  src: url('https://pss.bdstatic.com/static/superman/font/iconfont-cdfecb8456.eot?#iefix') format('embedded-opentype'), url('https://pss.bdstatic.com/static/superman/font/iconfont-fa013548a9.woff2') format('woff2'), url('https://pss.bdstatic.com/static/superman/font/iconfont-840387fb42.woff') format('woff'), url('https://pss.bdstatic.com/static/superman/font/iconfont-4530e108b6.ttf') format('truetype'), url('https://pss.bdstatic.com/static/superman/font/iconfont-74fcdd51ab.svg#iconfont') format('svg')
+}
+
 body, html {
   height: 100%; /* 设置body和html的高度为100% */
   margin: 0; /* 去除默认的margin */
@@ -86,6 +92,21 @@ main {
 
 }
 
+.hot-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+
+  border: 1px solid #000; /* 为了更好地可视化效果 */
+
+  font-family: cIconfont;
+}
+
+.hot-btn {
+  
+}
+
 footer {
   text-align: center;
 }
@@ -97,5 +118,7 @@ footer a {
   padding: 5px;   /*左右间隔*/ 
 }
 
-
+footer .accessibility,.more {
+  font-family: cIconfont;
+}
 
