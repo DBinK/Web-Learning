@@ -53,7 +53,7 @@ nav a:hover {
 }
 
 .setting-btn {
-  color: #333;
+  color: #333 ;
   border-radius: 5px;
   padding: 5px;
 }
@@ -67,6 +67,11 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.login-btn:hover {
+  color: #ffffff;
+  background-color: #315EFB;
 }
 
 /* *主页面部分 */
