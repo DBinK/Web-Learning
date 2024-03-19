@@ -73,10 +73,12 @@ main {
   border: 1px solid #000; /* 为了更好地可视化效果 */
   margin: 0 auto;
   width: 50%;
-  height: calc(100vh - 20px);; /* 设置容器的高度为整个视口的高度 */
+  height: calc(100vh - 80px);; /* 设置容器的高度为整个视口的高度 */
 }
 
 .logo {
+  border: 1px solid #000; /* 为了更好地可视化效果 */
+  transform: scale(0.5);
 } 
 
 .search-box {
@@ -85,7 +87,7 @@ main {
 footer a {
   text-decoration: none;
   height: 20px;
-  color: #333;
+  color: #a3a3a3;
   font-size: 12px;
   align-items: center;
   padding: 5px;   /*左右间隔*/ 
