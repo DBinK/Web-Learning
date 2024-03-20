@@ -318,6 +318,7 @@ main {
 
 .assist:hover {
   box-shadow: 0px 2px 10px #7f7f7f33; 
+}
 
 .assist-icon {
   transform: scale(0.75);
