@@ -104,18 +104,20 @@ main {
   align-items: center;
   justify-content: space-between; /* 将元素分别对齐到容器的左右两端 */
    /*border: 1px solid #000; /* 为了更好地可视化效果 */
-
+  
 }
 
 .cam-btn {
+  z-index: 3;
   width: 24px;
   height: 20px;
-  margin-right: 50px;
   object-fit: cover; /* 或者 object-fit: contain; 具体根据需求选择 */
   object-position: 0px -47px; /* 或者其他位置，比如 top, bottom, left, right */
+  left: -18px; /* 将.cam-btn向左移动18像素 */
 }
 
 .input-box {
+  z-index: 2;
   box-sizing: border-box;
   margin-right: -20px;
   height: 42px;
@@ -123,7 +125,6 @@ main {
   width: 90%;
   border: 2px solid #b6b6b6; /* 细边框 */
   border-radius: 10px 0 0 10px;
-
 }
 
 .input-box:hover {
@@ -136,6 +137,7 @@ main {
 }
 
 .search-btn {
+  z-index: 1;
   box-sizing: border-box;
   height: 42px;
   width: 15%;
