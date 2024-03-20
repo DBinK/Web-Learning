@@ -102,33 +102,35 @@ main {
 .input-ctrl {
   display: flex;
   justify-content: space-between; /* 将元素分别对齐到容器的左右两端 */
-  border: 1px solid #000; /* 为了更好地可视化效果 */
   
 }
 
 .input-and-cam {
   display: flex;
-  
+  position: relative; /* 添加相对定位，以便设置子元素的定位 */
   align-items: center;
   flex-direction: row;
 }
 
 .cam-btn {
   box-sizing: border-box;
+  position: absolute; /* 添加绝对定位，以便进行绝对定位 */
   z-index: 2;
   width: 24px;
-  height: 20px;
-  object-fit: cover; 
+  height: 24px;
+  object-fit: cover;
   object-position: 0px -47px;
+  top: 50%; /* 相对于父元素垂直居中 */
+  left: 95%; /* 相对于父元素水平居中 */
+  transform: translate(-50%, -50%); /* 通过transform进行微调居中位置 */
+  /*border: 1px solid #000; *//* !为了更好地可视化效果 */
+}
 
-  margin-left: -55px;
-  
-  /* border: 1px solid #000; */  /* !为了更好地可视化效果 */
-  
+.cam-btn:hover {
+  object-position: 0px -71px;
 }
 
 .input-box {
-
   box-sizing: border-box;
   z-index: 1;
   height: 42px;
@@ -136,7 +138,6 @@ main {
   width: 555px;
   border: 2px solid #b6b6b6; /* 细边框 */
   border-radius: 10px 0 0 10px;
-  
 }
 
 .input-box:hover {
