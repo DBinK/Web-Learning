@@ -291,13 +291,13 @@ main {
 
   border-radius: 50px;
   background-color: #f0f0f0;
-  box-shadow: 0px 2px 50px rgba(206, 206, 206, 0.5); /* 添加阴影效果 */
+  box-shadow: 0px 2px 50px #7f7f7f33; /* 添加阴影效果 */
 
   box-sizing: border-box;
   margin-bottom: auto;
   margin-left: auto;
   flex-direction: column;
-  /* border: 1px solid #000000;  *//* !为了更好地可视化效果 */ 
+  /* border: 1px solid #000; */ /* !为了更好地可视化效果 */ 
 }
 
 
@@ -314,6 +314,10 @@ main {
 /*   border: 1px solid #000; */ /* !为了更好地可视化效果 */ 
 }
 
+.assist:hover {
+  box-shadow: 0px 2px 10px #7f7f7f33; /* 添加阴影效果 */
+}
+
 .assist-icon {
   transform: scale(0.75);
 }
@@ -328,9 +332,9 @@ main {
 
   box-sizing: border-box;
   background-image: url(https://pss.bdstatic.com/static/superman/img/qrcode/qrcode@2x-daf987ad02.png);
-  background-size: 75%;
+  background-size: 74%;
   background-position: center; /* 居中显示背景图片 */
-/*   border: 1px solid #000;  */ /* !为了更好地可视化效果 */
+  /*   border: 1px solid #000; */ /* !为了更好地可视化效果 */ 
 }
 
 .qr-icon {
@@ -339,6 +343,7 @@ main {
 
 .qr:hover {
   background-image: url(https://pss.bdstatic.com/static/superman/img/qrcode/qrcode-hover@2x-f9b106a848.png);
+  box-shadow: 0px 2px 10px #7f7f7f33; /* 添加阴影效果 */
 }
 
 
