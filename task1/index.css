@@ -12,6 +12,7 @@ body, html {
   position: relative; /* 确保 body 容器具有相对定位 */
 }
 
+
 /* *导航栏部分 */
 
 nav {
@@ -75,13 +76,14 @@ nav a:hover {
   background-color: #315EFB;
 }
 
+
 /* *主页面部分 */
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-/*   border: 1px solid #000;  *//* !为了更好地可视化效果 */
+/*   border: 1px solid #000;  *//* !边框预览 */
   margin: 0 auto;
   width: 653px;
   height: calc(100vh - 80px);; /* 设置容器的高度为整个视口的高度 */
@@ -92,7 +94,7 @@ main {
   display: block;
   width: 270px;
   margin-bottom: 15px;
-  /* border: 1px solid #000; */ /* !为了更好地可视化效果 */
+  /* border: 1px solid #000; */ /* !边框预览 */
 } 
 
 .search-box {
@@ -124,7 +126,7 @@ main {
   top: 50%; /* 相对于父元素垂直居中 */
   left: 95%; /* 相对于父元素水平居中 */
   transform: translate(-50%, -50%); /* 通过transform进行微调居中位置 */
-  /*border: 1px solid #000; *//* !为了更好地可视化效果 */
+  /*border: 1px solid #000; *//* !边框预览 */
 }
 
 .cam-btn:hover {
@@ -165,6 +167,7 @@ main {
 .search-btn:hover {
   background-color: #4662D9;
 }
+
 
 /* *热搜部分 */
 
@@ -207,6 +210,7 @@ main {
   transform: rotate(360deg);
 }
 
+
 /* *热搜列表 */
 
 .hot-list {
@@ -226,9 +230,8 @@ main {
   font-family: Arial,sans-serif;
 
   padding: 0px;
-  /* border: 1px solid #000; /* !为了更好地可视化效果 */ 
+  /* border: 1px solid #000;*/  /* !边框预览 */ 
   height: 36px;
-  
 }
 
 
@@ -297,9 +300,8 @@ main {
   margin-bottom: auto;
   margin-left: auto;
   flex-direction: column;
-  /* border: 1px solid #000; */ /* !为了更好地可视化效果 */ 
+  /* border: 1px solid #000; */ /* !边框预览 */ 
 }
-
 
 .assist {
   display: flex;
@@ -311,19 +313,18 @@ main {
   border-radius: 50px;
   
   box-sizing: border-box;
-/*   border: 1px solid #000; */ /* !为了更好地可视化效果 */ 
+/*   border: 1px solid #000; */ /* !边框预览 */ 
 }
 
 .assist:hover {
-  box-shadow: 0px 2px 10px #7f7f7f33; /* 添加阴影效果 */
-}
+  box-shadow: 0px 2px 10px #7f7f7f33; 
 
 .assist-icon {
   transform: scale(0.75);
 }
 
 .qr  {
-  display: flex; /* 添加 display: flex; 使其成为一个 flex 容器 */
+  display: flex; 
   align-items: center;
   justify-content: center;
   width: 44px;
@@ -334,7 +335,7 @@ main {
   background-image: url(https://pss.bdstatic.com/static/superman/img/qrcode/qrcode@2x-daf987ad02.png);
   background-size: 74%;
   background-position: center; /* 居中显示背景图片 */
-  /*   border: 1px solid #000; */ /* !为了更好地可视化效果 */ 
+  /*   border: 1px solid #000; */ /* !边框预览 */ 
 }
 
 .qr-icon {
@@ -343,7 +344,7 @@ main {
 
 .qr:hover {
   background-image: url(https://pss.bdstatic.com/static/superman/img/qrcode/qrcode-hover@2x-f9b106a848.png);
-  box-shadow: 0px 2px 10px #7f7f7f33; /* 添加阴影效果 */
+  box-shadow: 0px 2px 10px #7f7f7f33; 
 }
 
 
@@ -364,5 +365,3 @@ footer a {
 footer a:hover {
   color: #000000;
 }
-
-
