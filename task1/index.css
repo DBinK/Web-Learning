@@ -297,7 +297,7 @@ main {
   margin-bottom: auto;
   margin-left: auto;
   flex-direction: column;
-  /* border: 1px solid #000000; /* !为了更好地可视化效果 */  */
+  /* border: 1px solid #000000;  *//* !为了更好地可视化效果 */ 
 }
 
 
@@ -311,7 +311,7 @@ main {
   border-radius: 50px;
   
   box-sizing: border-box;
-/*   border: 1px solid #000; /* !为了更好地可视化效果 */  */
+/*   border: 1px solid #000; */ /* !为了更好地可视化效果 */ 
 }
 
 .assist-icon {
@@ -330,7 +330,7 @@ main {
   background-image: url(https://pss.bdstatic.com/static/superman/img/qrcode/qrcode@2x-daf987ad02.png);
   background-size: 75%;
   background-position: center; /* 居中显示背景图片 */
-/*   border: 1px solid #000; /* !为了更好地可视化效果 */  */
+/*   border: 1px solid #000;  */ /* !为了更好地可视化效果 */
 }
 
 .qr-icon {
