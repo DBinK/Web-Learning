@@ -63,18 +63,29 @@ nav a:hover {
 }
 
 .setting-btn {
+  position: relative;
   color: #333 ;
   border-radius: 5px;
   padding: 5px;
 }
 
 .setting-menu { 
-  /* Set width of the dropdown */
-  background: #f2f2f2;
+  color: #000;
+  background-color: #f9f9f9;
   display: none;
   position: absolute;
+  top: 50px;
+  right: 50px;
+  min-width: 6px;
+  box-shadow: 2px 0px 8px 0px rgba(0,0,0,0.2);
+  padding: 12px;
+  border-radius: 5px;
   z-index: 999;
-  left: 0;
+}
+
+/* TODO自动弹出列表不工作, 修复中 */
+.setting-btn-li:hover .setting-menu {
+  display: block !important;
 }
  
 .login-btn {
