@@ -6,7 +6,6 @@
 }
 
 body, html {
-  height: 100%; /* 设置body和html的高度为100% */
   margin: 0; /* 去除默认的margin */
   padding: 0; /* 去除默认的padding */
   position: relative; /* 确保 body 容器具有相对定位 */
@@ -17,16 +16,17 @@ body, html {
 
 nav {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   /* background-color: #f2f2f2; */
-  padding: 10px;
 }
 
 nav a {
   text-decoration: none;
-  font: 14px/23px Arial,sans-serif;
+  font: 13px/23px Arial,sans-serif;
   padding: 5px; 
+
 }
 
 nav a:hover {
@@ -35,12 +35,19 @@ nav a:hover {
 
 .nav-left {
   display: flex;
+  padding-inline-start: 24px; /* 左边距 */
+}
+
+.nav-left li {
+  
+  margin-right: 13px;
+  text-decoration: none;
+  list-style-type: none; /* 去除圆点 */
+  color: #333;
 }
 
 .nav-left a {
-  margin-right: 13px;
-  text-decoration: none;
-  color: #333;
+  color: #000;
 }
 
 .nav-right {
@@ -49,9 +56,10 @@ nav a:hover {
   align-items: center;
 }
 
-.nav-right a {
+.nav-right li {
   margin-right: 20px;
   text-decoration: none;
+  list-style-type: none; /* 去除圆点 */
 }
 
 .setting-btn {
@@ -60,13 +68,22 @@ nav a:hover {
   padding: 5px;
 }
 
+.setting-menu { 
+  /* Set width of the dropdown */
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+ 
 .login-btn {
   background-color: #4E6EF2;
   color: #ffffff;
   border-radius: 5px;
-  height: 12px;
+  height: 13px;
   width: 36px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
@@ -86,7 +103,7 @@ main {
 /*   border: 1px solid #000;  *//* !边框预览 */
   margin: 0 auto;
   width: 660px;
-  height: calc(100vh - 80px);; /* 设置容器的高度为整个视口的高度 */
+  height: calc(100vh - 90px);; /* 设置容器的高度为整个视口的高度 */
 }
 
 .logo img {
@@ -355,6 +372,7 @@ main {
 footer {
   text-align: center;
   font-family: cIconfont;
+  bottom: 0;
 }
 
 footer a {
