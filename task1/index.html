@@ -45,11 +45,15 @@
 
             <div class="input-ctrl">  <!-- 搜索框 -->
                 <span class="input-and-cam">
-                    <input class="input-box" type="text">
+                    <input 
+                        class="input-box" 
+                        type="text"  
+                        id="searchInput"
+                        onkeydown="handleKeyDown(event)" >
                     <img class="cam-btn" src="https://pss.bdstatic.com/static/superman/img/searchbox/nicon-10750f3f7d.png">
                 </span>
                 
-                <button class="search-btn" >百度一下</button>            
+                <button class="search-btn" onclick="searchBaidu()">百度一下</button>               
             </div>
 
             <div class="hot-bar">  <!-- 热搜上部分的按钮 -->
@@ -144,15 +148,7 @@
 </body> 
 
 <script>
-    function rotateBtn() {
-        const btn = document.querySelector('.refresh-btn');
-        btn.classList.add('rotate');
-        
-        // Remove the rotate class after the animation completes
-        btn.addEventListener('transitionend', () => {
-            btn.classList.remove('rotate');
-        }, { once: true });
-    }
+
 </script>
 
 </html>

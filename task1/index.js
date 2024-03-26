@@ -1,7 +1,27 @@
-/* 获取 input-box类 已输入的数据*/
-function getVal() {
-    var val = document.getElementById('input-box').value;
-    return val;
+function searchBaidu() {
+        // 获取输入框中的内容
+        var keywords = document.getElementById('searchInput').value;
+        // 将关键词填入URL中
+        var searchUrl = 'https://www.baidu.com/s?wd=' + keywords;
+        // 打开链接
+        window.open(searchUrl);
+    }
+function handleKeyDown(event) {
+    if (event.key === "Enter") {
+        // 处理回车事件
+        searchBaidu();
+    }
 }
+function rotateBtn() {
+    const btn = document.querySelector(".refresh-btn");
+    btn.classList.add("rotate");
 
-getVal();
+    // Remove the rotate class after the animation completes
+    btn.addEventListener(
+        "transitionend",
+        () => {
+            btn.classList.remove("rotate");
+        },
+        { once: true }
+    );
+}
