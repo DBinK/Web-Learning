@@ -26,41 +26,16 @@ function rotateBtn() {
     );
 }
 
+function fillHotSearchData(data) {
+    for (let i = 0; i < data.length && i < 6; i++) {
+        const hotTitleElement = document.querySelector('.hot-title-' + i);
 
-function fillHotList(data) {
-    const hotList = document.querySelector('.hot-list');
-
-    // 清空热搜列表
-    hotList.innerHTML = '';
-
-    // 填充热搜标题
-    data.slice(0, 6).forEach((item, index) => {
-        const { title } = item;
-
-        const li = document.createElement('li');
-
-        const a = document.createElement('a');
-        a.classList.add(`hot-link-${index}`);
-        a.href = `#${index}`;
-
-        const spanNum = document.createElement('span');
-        spanNum.classList.add(`hot-num-${index}`);
-        spanNum.textContent = index + 1;
-
-        const spanTitle = document.createElement('span');
-        spanTitle.classList.add(`hot-title-${index}`);
-        spanTitle.textContent = title;
-
-        a.appendChild(spanNum);
-        a.appendChild(spanTitle);
-
-        li.appendChild(a);
-
-        hotList.appendChild(li);
-    });
+        if (hotTitleElement) {
+            hotTitleElement.textContent = data[i].title;
+        }
+    }
 }
 
-// 调用API获取数据
 var requestOptions = {
     method: 'GET',
     redirect: 'follow'
@@ -68,5 +43,5 @@ var requestOptions = {
 
 fetch("https://v2.api-m.com/api/baiduhot", requestOptions)
     .then(response => response.json())
-    .then(result => fillHotList(result.data))
+    .then(result => fillHotSearchData(result.data))
     .catch(error => console.log('error', error));
