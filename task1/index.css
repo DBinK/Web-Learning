@@ -1,16 +1,25 @@
 /* *全局样式设置 */
 @font-face {
   font-family: cIconfont;
-  src: url('https://pss.bdstatic.com/static/superman/font/iconfont-cdfecb8456.eot');
-  src: url('https://pss.bdstatic.com/static/superman/font/iconfont-cdfecb8456.eot?#iefix') format('embedded-opentype'), url('https://pss.bdstatic.com/static/superman/font/iconfont-fa013548a9.woff2') format('woff2'), url('https://pss.bdstatic.com/static/superman/font/iconfont-840387fb42.woff') format('woff'), url('https://pss.bdstatic.com/static/superman/font/iconfont-4530e108b6.ttf') format('truetype'), url('https://pss.bdstatic.com/static/superman/font/iconfont-74fcdd51ab.svg#iconfont') format('svg')
+  src: url("https://pss.bdstatic.com/static/superman/font/iconfont-cdfecb8456.eot");
+  src: url("https://pss.bdstatic.com/static/superman/font/iconfont-cdfecb8456.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://pss.bdstatic.com/static/superman/font/iconfont-fa013548a9.woff2")
+      format("woff2"),
+    url("https://pss.bdstatic.com/static/superman/font/iconfont-840387fb42.woff")
+      format("woff"),
+    url("https://pss.bdstatic.com/static/superman/font/iconfont-4530e108b6.ttf")
+      format("truetype"),
+    url("https://pss.bdstatic.com/static/superman/font/iconfont-74fcdd51ab.svg#iconfont")
+      format("svg");
 }
 
-body, html {
+body,
+html {
   margin: 0; /* 去除默认的margin */
   padding: 0; /* 去除默认的padding */
   position: relative; /* 确保 body 容器具有相对定位 */
 }
-
 
 /* *导航栏部分 */
 
@@ -24,9 +33,8 @@ nav {
 
 nav a {
   text-decoration: none;
-  font: 13px/23px Arial,sans-serif;
-  padding: 5px; 
-
+  font: 13px/23px Arial, sans-serif;
+  padding: 5px;
 }
 
 nav a:hover {
@@ -39,7 +47,6 @@ nav a:hover {
 }
 
 .nav-left li {
-  
   margin-right: 13px;
   text-decoration: none;
   list-style-type: none; /* 去除圆点 */
@@ -64,12 +71,12 @@ nav a:hover {
 
 .setting-btn {
   position: relative;
-  color: #333 ;
+  color: #333;
   border-radius: 5px;
   padding: 5px;
 }
 
-.setting-menu { 
+.setting-menu {
   color: #000;
   background-color: #f9f9f9;
   display: none;
@@ -77,7 +84,7 @@ nav a:hover {
   top: 50px;
   right: 50px;
   min-width: 6px;
-  box-shadow: 2px 0px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 2px 0px 8px 0px rgba(0, 0, 0, 0.2);
   padding: 12px;
   border-radius: 5px;
   z-index: 999;
@@ -87,9 +94,9 @@ nav a:hover {
 .setting-btn-li:hover .setting-menu {
   display: block !important;
 }
- 
+
 .login-btn {
-  background-color: #4E6EF2;
+  background-color: #4e6ef2;
   color: #ffffff;
   border-radius: 5px;
   height: 13px;
@@ -101,9 +108,8 @@ nav a:hover {
 
 .login-btn:hover {
   color: #ffffff;
-  background-color: #315EFB;
+  background-color: #315efb;
 }
-
 
 /* *主页面部分 */
 
@@ -111,10 +117,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-/*   border: 1px solid #000;  *//* !边框预览 */
+  /*   border: 1px solid #000;  */ /* !边框预览 */
   margin: 0 auto;
   width: 660px;
-  height: calc(100vh - 90px);; /* 设置容器的高度为整个视口的高度 */
+  height: calc(100vh - 90px); /* 设置容器的高度为整个视口的高度 */
 }
 
 .logo img {
@@ -123,17 +129,16 @@ main {
   width: 270px;
   margin-bottom: 15px;
   /* border: 1px solid #000; */ /* !边框预览 */
-} 
+}
 
 .search-box {
   /*border: 1px solid #000; /* 为了更好地可视化效果 */
-  width: calc(100% - 20px); 
+  width: calc(100% - 20px);
 }
 
 .input-ctrl {
   display: flex;
   justify-content: space-between; /* 将元素分别对齐到容器的左右两端 */
-  
 }
 
 .input-and-cam {
@@ -154,7 +159,7 @@ main {
   top: 50%; /* 相对于父元素垂直居中 */
   left: 95%; /* 相对于父元素水平居中 */
   transform: translate(-50%, -50%); /* 通过transform进行微调居中位置 */
-  /*border: 1px solid #000; *//* !边框预览 */
+  /*border: 1px solid #000; */ /* !边框预览 */
 }
 
 .cam-btn:hover {
@@ -177,8 +182,8 @@ main {
 }
 
 .input-box:focus {
-  outline-style:none;
-  border: 2px solid #4E6EF2; 
+  outline-style: none;
+  border: 2px solid #4e6ef2;
 }
 
 .search-btn {
@@ -189,15 +194,14 @@ main {
   margin-left: -3px;
   font-size: 16px;
   color: #ffffff;
-  background-color: #4E6EF2;
-  border: 1px solid #4E6EF2; /* 细边框 */
+  background-color: #4e6ef2;
+  border: 1px solid #4e6ef2; /* 细边框 */
   border-radius: 0 10px 10px 0;
 }
 
 .search-btn:hover {
-  background-color: #4662D9;
+  background-color: #4662d9;
 }
-
 
 /* *热搜部分 */
 
@@ -219,12 +223,12 @@ main {
 }
 
 .hot-btn:hover {
-  color: #315EFB;
+  color: #315efb;
 }
 
 .hot-arrow {
   margin-left: -3px;
-  color: #9195A3;
+  color: #9195a3;
 }
 
 .refresh-ctrl {
@@ -240,7 +244,6 @@ main {
   transform: rotate(360deg);
 }
 
-
 /* *热搜列表 */
 
 .hot-list {
@@ -248,7 +251,6 @@ main {
   column-count: 2;
   list-style-type: none; /* 去除圆点 */
   padding: 0; /* 去除默认的内部缩进 */
-  
 }
 
 .hot-list li {
@@ -257,13 +259,12 @@ main {
   text-align: center;
 
   box-sizing: border-box;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
 
   padding: 0px;
-  /* border: 1px solid #000;*/  /* !边框预览 */ 
+  /* border: 1px solid #000;*/ /* !边框预览 */
   height: 36px;
 }
-
 
 .hot-list a {
   color: #000;
@@ -272,7 +273,7 @@ main {
 
 .hot-list :hover {
   text-decoration: underline; /* 添加下划线 */
-  color: #315EFB;
+  color: #315efb;
 }
 
 [class^="hot-num-"] {
@@ -280,36 +281,34 @@ main {
   text-align: center;
   width: 16px;
   margin-right: 5px;
-  color: #9195A3;
+  color: #9195a3;
   font-family: cIconfont;
 }
 
 .hot-num-0 {
   transform: rotate(180deg);
-  color: #F63051;
+  color: #f63051;
 }
 
 .hot-num-1 {
-  color: #FE2D46;
+  color: #fe2d46;
 }
 
 .hot-num-2 {
-  color: #FF6618;
+  color: #ff6618;
 }
 
 .hot-num-3 {
-  color: #FAA90E;
+  color: #faa90e;
 }
 
-
 [class^="hot-hot-"] {
-
   display: inline-block;
   transform: scale(0.8); /* 可以根据需要调整缩放比例 */
   transform-origin: center;
-  
+
   color: #ffffff;
-  background-color: #FF6600;
+  background-color: #ff6600;
   padding: 0 2px;
   border-radius: 4px;
   font-weight: 200;
@@ -330,7 +329,7 @@ main {
   margin-bottom: auto;
   margin-left: auto;
   flex-direction: column;
-  /* border: 1px solid #000; */ /* !边框预览 */ 
+  /* border: 1px solid #000; */ /* !边框预览 */
 }
 
 .assist {
@@ -341,21 +340,21 @@ main {
   height: 44px;
 
   border-radius: 50px;
-  
+
   box-sizing: border-box;
-/*   border: 1px solid #000; */ /* !边框预览 */ 
+  /*   border: 1px solid #000; */ /* !边框预览 */
 }
 
 .assist:hover {
-  box-shadow: 0px 2px 10px #7f7f7f33; 
+  box-shadow: 0px 2px 10px #7f7f7f33;
 }
 
 .assist-icon {
   transform: scale(0.75);
 }
 
-.qr  {
-  display: flex; 
+.qr {
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
@@ -366,7 +365,7 @@ main {
   background-image: url(https://pss.bdstatic.com/static/superman/img/qrcode/qrcode@2x-daf987ad02.png);
   background-size: 74%;
   background-position: center; /* 居中显示背景图片 */
-  /*   border: 1px solid #000; */ /* !边框预览 */ 
+  /*   border: 1px solid #000; */ /* !边框预览 */
 }
 
 .qr-icon {
@@ -375,9 +374,8 @@ main {
 
 .qr:hover {
   background-image: url(https://pss.bdstatic.com/static/superman/img/qrcode/qrcode-hover@2x-f9b106a848.png);
-  box-shadow: 0px 2px 10px #7f7f7f33; 
+  box-shadow: 0px 2px 10px #7f7f7f33;
 }
-
 
 /* *底栏部分 */
 
@@ -391,7 +389,7 @@ footer a {
   text-decoration: none;
   color: #a3a3a3;
   font-size: 12px;
-  padding: 5px;   /*左右间隔*/ 
+  padding: 5px; /*左右间隔*/
 }
 
 footer a:hover {
