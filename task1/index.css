@@ -57,6 +57,42 @@ nav a:hover {
   color: #000;
 }
 
+.s-top-left-new .s-top-more {
+    display: block;
+    position: absolute;
+    top: 33px;
+    right: -15px;
+    width: 228px;
+    height: 290px;
+    padding-top: 8px;
+    background: #fff;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+    border-radius: 12px;
+}
+
+.s-top-left-new .s-top-more .s-top-more-content a {
+  width: 60px;
+  height: 82px;
+  float: left;
+}
+
+.s-top-left-new .s-top-more .s-top-more-content .img-spacing {
+  margin-right: 16px;
+}
+
+.s-top-left-new .s-top-more .s-top-more-content:nth-child(3n+1), .s-top-left-new .s-top-more .s-top-more-content:nth-child(3n+2) {
+  margin-right: 16px;
+}
+.s-top-left-new .s-top-more .s-top-more-content:nth-child(3n+1) {
+  margin-left: 8px;
+}
+
+.s-top-left-new .s-top-more .s-top-more-content {
+  float: left;
+  width: 60px;
+}
+
+
 .nav-right {
   display: flex;
   margin-left: auto;
