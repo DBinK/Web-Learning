@@ -25,7 +25,6 @@ html {
 
 nav {
   display: flex;
-  margin: 0 auto;
   min-width: 660px;
   justify-content: space-between;
   box-sizing: border-box;
@@ -136,7 +135,6 @@ nav a:hover {
 /* 右导航栏 */
 .nav-right {
   display: flex;
-  margin-top: 16px;
   margin-left: auto;
   align-items: center;
 }
