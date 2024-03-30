@@ -65,8 +65,12 @@ nav a:hover {
   position: relative;
 }
 
-.more-menu {
+.more-btn:hover .more-menu {
   display: block;
+}
+
+.more-menu {
+  display: none;
   position: absolute;
   top: 29px;
   right: -12px;
