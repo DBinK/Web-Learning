@@ -25,9 +25,9 @@ html {
 
 nav {
   display: flex;
+  margin: 0 auto;
   min-width: 660px;
   justify-content: space-between;
-  align-items: center;
   box-sizing: border-box;
   /* background-color: #f2f2f2; */
 }
@@ -45,6 +45,7 @@ nav a:hover {
 /* 左导航栏 */
 .nav-left {
   display: flex;
+  margin-top: 16px;
   padding-inline-start: 24px; /* 左边距 */
 }
 
@@ -72,7 +73,7 @@ nav a:hover {
 .more-menu {
   display: none;
   position: absolute;
-  top: 29px;
+  top: 28px;
   right: -12px;
   width: 226px;
   height: 298px;
@@ -135,6 +136,7 @@ nav a:hover {
 /* 右导航栏 */
 .nav-right {
   display: flex;
+  margin-top: 16px;
   margin-left: auto;
   align-items: center;
 }
